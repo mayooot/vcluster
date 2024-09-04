@@ -643,6 +643,17 @@
           "items": true,
           "type": "array",
           "description": "TopologySpreadConstraints are the topology spread constraints for the CoreDNS pod."
+        },
+        "affinity": {
+          "type": "object",
+          "description": "Affinity is the affinity to apply to the pod."
+        },
+        "tolerations": {
+          "items": {
+            "type": "object"
+          },
+          "type": "array",
+          "description": "Tolerations are the tolerations to apply to the pod."
         }
       },
       "additionalProperties": false,

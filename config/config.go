@@ -1203,6 +1203,12 @@ type CoreDNSDeployment struct {
 
 	// TopologySpreadConstraints are the topology spread constraints for the CoreDNS pod.
 	TopologySpreadConstraints []interface{} `json:"topologySpreadConstraints,omitempty"`
+
+	// Affinity is the affinity to apply to the pod.
+	Affinity map[string]interface{} `json:"affinity,omitempty"`
+
+	// Tolerations are the tolerations to apply to the pod.
+	Tolerations []map[string]interface{} `json:"tolerations,omitempty"`
 }
 
 type ControlPlaneProxy struct {
